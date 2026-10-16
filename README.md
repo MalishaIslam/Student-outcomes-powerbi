@@ -16,7 +16,7 @@ a SQL Server + ASP.NET Core web app built on the same dataset.
 | --- | --- |
 | ![Overview page](images/Overview.png) | ![Outcome Analysis page](images/Outcome_Analysis.png) |
 
-A static copy of the full report is in [`Student-Outcomes-Dashboard.pdf`](Student-Outcomes-Dashboard.pdf).
+A static copy of the full report is in [`Student-Outcomes-Dashboard.pdf`](Student_Outcomes_Dashboard.pdf).
 
 ## Report pages
 
