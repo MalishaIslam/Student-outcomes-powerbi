@@ -1,7 +1,5 @@
 # Student Outcomes Dashboard (Power BI)
 
-Built by **Malisha Islam Tapotee** · [Portfolio](https://malishaislam.github.io/)
-
 An interactive two-page Power BI dashboard analysing about 32,600 course-enrollment records from the
 [Open University Learning Analytics Dataset (OULAD)](https://archive.ics.uci.edu/dataset/349/open+university+learning+analytics+dataset).
 It shows how students finish their courses (pass, distinction, fail or withdraw) and how those outcomes
@@ -45,7 +43,7 @@ the Overview page also applies to the Outcome Analysis page.
    Pass Rate counts both *Pass* and *Distinction* as successful completions.
 3. **Visuals:** cards, donut chart, stacked bar chart, clustered column chart, line chart and treemap,
    with custom titles and formatting.
-4. **Interactivity:** synced slicers, cross-filtering between visuals, and page navigation buttons.
+4. **Interactivity:** Page navigation buttons.
 
 ## Key findings
 
