@@ -58,7 +58,7 @@ A static copy of the full report is in [`Student_Outcomes_Dashboard.pdf`](Studen
 
 ## Open the report
 
-Download `Student-Outcomes-Dashboard.pbix` and open it in
+Download `Student Outcomes Dashboard.pbix` and open it in
 [Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop) (free, Windows).
 The data is already imported into the file.
 
