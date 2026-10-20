@@ -16,17 +16,17 @@ a SQL Server + ASP.NET Core web app built on the same dataset.
 | --- | --- |
 | ![Overview page](images/Overview.png) | ![Outcome Analysis page](images/Outcome_Analysis.png) |
 
-A static copy of the full report is in [`Student-Outcomes-Dashboard.pdf`](Student_Outcomes_Dashboard.pdf).
+A static copy of the full report is in [`Student_Outcomes_Dashboard.pdf`](Student_Outcomes_Dashboard.pdf).
 
 ## Report pages
 
 | Page | What it shows |
 | --- | --- |
-| **Overview** | KPI cards (total enrollments, pass rate, withdrawal rate, distinction rate), students by region, and slicers for course module, gender and age band |
+| **Overview** | KPI cards (total enrollments, pass rate, withdrawal rate, distinction rate), and a treemap of enrollments by region |
 | **Outcome Analysis** | Outcomes by course module, pass rate by education level, pass-rate trend across semesters, and the overall outcome distribution |
 
-Page-navigation buttons move between the two pages, and the slicers are synced so a filter chosen on
-the Overview page also applies to the Outcome Analysis page.
+ Page-navigation buttons move between the two pages, and clicking a bar or segment in any chart
+        filters the other visuals on the same page.
 
 ## How it was built
 
@@ -34,7 +34,7 @@ the Overview page also applies to the Outcome Analysis page.
 2. **DAX measures:**
 
    ```DAX
-   Total Students   = COUNTROWS(studentInfo)
+   Total Enrollments   = COUNTROWS(studentInfo)
    Pass Rate        = DIVIDE(CALCULATE([Total Students], studentInfo[final_result] IN {"Pass","Distinction"}), [Total Students])
    Withdrawal Rate  = DIVIDE(CALCULATE([Total Students], studentInfo[final_result] = "Withdrawn"), [Total Students])
    Distinction Rate = DIVIDE(CALCULATE([Total Students], studentInfo[final_result] = "Distinction"), [Total Students])
